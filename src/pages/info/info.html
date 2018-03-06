@@ -1,0 +1,75 @@
+<ion-content>
+	<ion-card>
+		<ion-slides class="slides">
+
+  <ion-slide class='slides1' >
+    <h2><img src="../assets/icon/slides/food1.jpg"></h2>
+  </ion-slide>
+
+  <ion-slide class='slides1' >
+    <h2><img src="../assets/icon/slides/food2.jpg"></h2>
+  </ion-slide>
+
+  <ion-slide class='slides1' >
+    <h2><img src="../assets/icon/slides/food3.jpg"></h2>
+  </ion-slide>
+
+  </ion-slides>
+		<h2 class='header'>Info Umum</h2>
+<div class ='word1'>Mendoan tempe disajikan dalam keadaan panas disertai dengan cabe rawit atau sambal kecap. Mendoan tempe dapat dijadikan sebagai lauk makan ataupun makanan ringan untuk menemani minum teh atau kopi saat santai.
+
+Mendoan tempe mudah ditemui di warung-warung tradisional di wilayah eks karesidenan Banyumas dan Tegal</div>
+
+<ion-grid>
+
+  <ion-row><img class="icon1" src="../assets/icon/placeholder.png"><ion-col class='word2'>Jl.Pekan Baru 02 komplek Perikanan</ion-col></ion-row><br>
+  <ion-row><img class="icon1" src="../assets/icon/clock.png"><ion-col class='word2'>Pukul 24.00 sampai 12.00 WIB</ion-col></ion-row><br>    
+  <ion-row><img class="icon1" src="../assets/icon/price-tag.png"><ion-col class='word2'>Rp. 50000 - Rp. 600000</ion-col></ion-row><br>
+  <ion-row><img class="icon1" src="../assets/icon/tray.png"><ion-col class='word2'>Makanan</ion-col></ion-row>
+
+</ion-grid>
+
+  <button ion-button color="secondary" outline full><img class="button1" src="../assets/icon/telephone.png"> 081887667545</button>
+<ion-grid>
+
+  <button ion-button color="danger" clear full ><ion-row><img class="button2" src="../assets/icon/cutlery.png"><ion-col>Lihat Menu</ion-col></ion-row><ion-col class="symbol">></ion-col></button>
+
+  <button (click)="showAlert()" ion-button color="danger" clear full ><ion-row><img class="button2" src="../assets/icon/tap.png"><ion-col>Lihat Fasilitas</ion-col></ion-row><ion-col class="symbol">></ion-col></button>
+
+  <button ion-button color="danger" clear full ><ion-row><img class="button2" src="../assets/icon/paper-plane.png"><ion-col>Ke Lokasi</ion-col></ion-row><ion-col class="symbol">></ion-col></button>
+
+</ion-grid>
+	</ion-card>
+<ion-grid>
+   <ion-row>
+        <ion-col >
+          <ion-card>
+            <div class="card3"(click)="asd()">
+            <div class="icon3"><img src="assets/icon/bookmark.png"></div>
+              <div class="word3">
+              Tandai
+            </div>
+          </div>
+        </ion-card>
+      </ion-col>
+      <ion-col >
+        <ion-card>
+          <div class="card3" (click)="asd()">
+              <div class="icon3"><img src="assets/icon/review.png"></div>
+                <div class="word3">
+                Review
+            </div>
+          </div>
+        </ion-card>
+      </ion-col>
+  </ion-row>
+</ion-grid>
+
+  <ion-card>
+   <div class="review">Review</div>
+
+   
+
+  </ion-card>
+  
+</ion-content>

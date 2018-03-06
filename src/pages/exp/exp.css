@@ -13,24 +13,24 @@ ion-content{
 ion-slides{	
 	
 }
-.geser{
-	autoplay : 1000;
+.slider1{
+	autoplay : 5000;
 	loop : true;
 	speed : 3000;
+	border-radius: 5px;
 }
 .slider2{
 	autoplay: 7000; 
 	loop: true; 
 	speed: 3000;
 }
-.sliding{ 
-	width: 300px;
-	height: 200px;
-	border-radius: 5px;
+.sliding{
+	width:400px; 
+	height:250px;
 }
 .sliding1{
-	width: 400px; 
-	height: 200px;
+	width:400px; 
+	height:150px;
 }
 .isi{
 	padding-top: 20px;
@@ -43,6 +43,7 @@ img{
 	height: 40px;
 	padding-bottom: 5px;
 	padding-top: 15px;
+	padding-top: 20px
 }
 .kategori{
 	padding-top: 1px;

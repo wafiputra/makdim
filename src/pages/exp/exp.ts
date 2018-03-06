@@ -3,30 +3,26 @@ import { NavController } from 'ionic-angular';
 
 import { ContactPage } from '../contact/contact';
 import { AboutPage } from '../about/about';
-import { InfoPage } from '../info/info';
-import { expPage } from '../exp/exp';
+import { TabsPage } from '../tabs/tabs';
 
 @Component({
-  selector: 'page-home',
-  templateUrl: 'home.html'
+  selector: 'page-exp',
+  templateUrl: 'exp.html'
 })
-export class HomePage {
+export class expPage {
 
   constructor(public navCtrl: NavController) {
 
   }
 
    slide1(){
-  	this.navCtrl.push(InfoPage)
+  	this.navCtrl.push(AboutPage)
   }
    slide2(){
   	this.navCtrl.push(ContactPage)
   }
    slide3(){
   	this.navCtrl.push(TabsPage)
-  }
-  exp(){
-    this.navCtrl.push(expPage)
   }
 
 }

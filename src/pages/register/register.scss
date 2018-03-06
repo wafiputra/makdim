@@ -1,0 +1,66 @@
+page-register {
+  .login-content {
+    background: #ffffff;
+ 
+    .login-box {
+      background: #ffffff;
+      padding: 20px 20px 0px 20px;
+      margin-top: 30px;
+    }
+ 
+    ion-row {
+       align-items: center;
+       text-align: center;
+     }
+ 
+     ion-item {
+         border-radius: 30px !important;
+         padding-left: 30px !important;
+         font-size: 0.9em;
+         margin-bottom: 10px;
+         border: 1px solid #ffffff;
+         border-bottom: 0px !important;
+         box-shadow: none !important;
+         background: #ecf0f1;
+     }
+
+     .header{
+       font-weght: bold;
+       font-size: 30px;
+     }
+
+     .signup-col {
+       margin: 0px 16px 0px 16px;
+       padding-bottom: 20px;
+     }
+ 
+     .item-inner {
+       border-bottom-color: #ffffff !important;
+       box-shadow: none !important;
+     }
+ 
+     .submit-btn {
+       background: #e74c3c;
+       border-radius: 30px !important;
+       border: 1px solid #ffffff;
+     }
+     
+     .item-icon-left{
+       text-align: left;
+       
+      }
+
+     .item-radio input ~ .radio-icon {
+         visibility: visible !important;
+     }
+
+      .item-radio > .radio-icon:before {
+       content: "\f3a6" !important; /*deselected - Ionic class = ion-android-radio-button-off */
+     }
+
+      .item-radio > input[type=radio]:checked ~ .radio-icon:before {
+       content: "\f3a7" !important; /*selected Ionic class = ion-android-radio-button-on */
+     }
+
+  }
+}

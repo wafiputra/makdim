@@ -1,0 +1,70 @@
+<ion-header>
+ <ion-card></ion-card>
+</ion-header>
+
+<ion-content>
+  <div class="header-img">
+    <ion-card>
+      <img src="assets/imgs/makanan.jpg" full>
+        <ion-fab right top>
+          <button ion-button small color="light">
+          Lewati
+          </button>
+        </ion-fab>
+    </ion-card>
+  </div>
+
+  <div class="text-box">
+    <ion-row>
+      <ion-col col-auto>
+        <img src="assets/imgs/direction.png" class="img-content">
+      </ion-col>
+      <ion-col>
+        <p><b>JELAJAH</b> dengan mudah beragam kuliner asik dan seru</p>
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col col-auto>
+        <img src="assets/imgs/list-searching.png" class="img-content">
+      </ion-col>
+      <ion-col> 
+        <p><b>TEMUKAN</b> tempat kuliner menarik dan berbeda untuk MakDim kamu setiap hari</p>
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col col-auto>
+        <img src="assets/imgs/supermarket.png" class="img-content">
+      </ion-col>
+      <ion-col> 
+        <p><b>DAPATKAN</b> penawaran dan promo seru dari tempat kuliner favoritmu</p>
+      </ion-col>
+    </ion-row>
+  </div>
+
+  <div>
+    <ion-row>
+      <ion-col width="90%">
+        <button ion-button icon-left full>
+          <ion-icon name="logo-facebook"></ion-icon>
+          Masuk dengan Facebook
+        </button>  
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col>
+        <button ion-button color="danger" full (click)="loginAccount()">Masuk</button>
+      </ion-col>
+
+      <ion-col>
+        <button ion-button color="light" full (click)="createAccount()">Daftar</button>
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+     <button ion-button class="register-btn" block clear (click)="showForgotPassword()">lupa password</button>
+    </ion-row>
+  </div>
+</ion-content>

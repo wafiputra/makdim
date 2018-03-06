@@ -1,0 +1,67 @@
+<ion-header>
+  <ion-navbar color="dark">
+    <ion-title>Daftar</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content class="login-content" padding>
+  <ion-row class="logo-row">
+    <ion-col>
+      <h1>MAKDIM</h1>
+    </ion-col>
+  </ion-row>
+  <div class="login-box">
+    
+    <form (ngSubmit)="register()" #registerForm="ngForm">
+      <ion-row>
+        <ion-col>
+          <ion-list inset>
+            
+            <ion-item>
+              <ion-input type="text" placeholder="Nama" name="nama" [(ngModel)]="registerCredentials.nama" required>               
+              </ion-input>
+            </ion-item>
+
+            <ion-item>
+              <ion-input type="text" placeholder="Email" name="email" [(ngModel)]="registerCredentials.email" required>
+              </ion-input>
+            </ion-item> 
+
+            <ion-item>
+              <ion-input type="password" placeholder="Password" name="password" [(ngModel)]="registerCredentials.password" required>
+              </ion-input>
+            </ion-item>
+
+            <ion-item>
+              <ion-input type="text" placeholder="Telepon" name="telepon" [(ngModel)]="registerCredentials.telepon" required>  
+              </ion-input>
+            </ion-item>
+
+            <ion-row>
+              <ion-cols>    
+                <input type="radio" name="sex value=" pria="">Laki-Laki<br>
+                <input type="radio" name="sex value=" wanita="">Perempuan
+              </ion-col>
+              <ion-col>
+                <ion-item>
+                  
+                  <ion-datetime class="item-icon-left" displayFormat="DD MM YYYY" placeholder="Tanggal Lahir" name="date" [(ngModel)]="registerCredentials.date" required>
+                    
+                  </ion-datetime>
+                </ion-item>
+              </ion-col>
+            </ion-row>
+            
+          </ion-list>
+        </ion-col>
+      </ion-row>
+      
+      <ion-row>
+        <ion-col class="signup-col">
+          <button ion-button class="submit-btn" full type="submit" [disabled]="!registerForm.form.valid">Daftar</button>
+        </ion-col>
+      </ion-row>
+      
+    </form>
+  </div>
+</ion-content>
